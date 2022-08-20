@@ -1,0 +1,111 @@
+---
+title: "First Assignment"
+author: "Marcio Woitek"
+date: "8/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Solution
+
+### Tasks 1 and 2
+
+I begin by creating a couple of lists, as instructed. Here is a bulleted list
+with a sub-list:
+
+* First item.
+* An item with a sub-list:
+  + Item a.
+  + Item b.
+* Last item.
+
+I have just finished task 1. Next, I will create a numbered list.
+
+1. Grocery shopping
+2. Email mom
+3. Get lunch
+4. Go on walk
+
+The second task is now complete.
+
+### Tasks 3 and 4
+
+For the third task, I have to include some *italicized words*. And, for task 4,
+I need to add some **words in bold print**. This should convince you that I
+know how to **bold** and *italicize* text.
+
+### Task 5
+
+I've already used different headers. But, in case you still need to be
+convinced that I know how to create them, I'll include a few more:
+
+#### Header
+
+##### Another header
+\
+\
+I believe this is enough.
+
+### Task 6
+
+I will write some code that adds two numbers. You should be able to see the
+corresponding output. But my code will be hidden.
+
+```{r hidden-code, echo=FALSE}
+num_1 <- 10L
+num_2 <- 20L
+my_sum <- num_1 + num_2
+sprintf("%d + %d = %d", num_1, num_2, my_sum)
+```
+
+### Task 7
+
+As instructed, next I will create a table. Specifically, I will generate a
+table that contains important Unix commands.
+
+| Name | Category           | Description                   |
+|------|--------------------|-------------------------------|
+| cd   | Filesystem         | Change the working directory  |
+| kill | Process management | Terminate or signal processes |
+| sed  | Text processing    | Stream editor                 |
+
+### Task 8
+
+For task 8, I will plot the following quadratic function:
+
+$$y = f(x) = x^2 - 4x$$
+
+To generate this plot, I will use the `curve` function.
+
+```{r plot-quadratic-function}
+curve(
+  x^2 - 4 * x,
+  from = -1,
+  to = 5,
+  xlab = "x",
+  ylab = "y"
+)
+```
+
+### Task 9
+
+The next step is to print my session info. The command for doing so is below.
+The output of this command is a little different from what you would expect.
+The reason is that I ran this code on my personal computer.
+
+```{r print-session-info, R.options = list(width = 80)}
+sessionInfo()
+```
+
+### Tasks 10 and 11
+
+Recall that the last two tasks are the following:
+
+* Execute .Rmd file.
+* Upload knitted PDF.
+
+Obviously, these are problems that I cannot solve **here**. However, if you are
+reading this document, this is a pretty good indication that I succeeded.
